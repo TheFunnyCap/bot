@@ -15,8 +15,8 @@ dp = Dispatcher()
 async def cmd_start(message: types.Message):
     await message.answer("Ну здарова!")
 
-@dp.message()  # Создаём новое событие, которое запускается в ответ на любой текст, введённый пользователем [2](https://skillbox.ru/media/code/chatboty-v-telegram-na-python-chast-1/)
-async def echo(message: types.Message):  # Создаём функцию с простой задачей — отправить обратно тот же текст, что ввёл пользователь [2](https://skillbox.ru/media/code/chatboty-v-telegram-na-python-chast-1/)
+@dp.message()  # Создаём новое событие, которое запускается в ответ на любой текст, введённый пользователем 
+async def echo(message: types.Message):  # Создаём функцию с простой задачей — отправить обратно тот же текст, что ввёл пользователь 
     await message.answer(message.text)
 
 # Запуск процесса поллинга новых апдейтов
